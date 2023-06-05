@@ -1,0 +1,217 @@
+main {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+main #particles-js {
+  height: inherit;
+}
+
+main .score,
+main .Quiz {
+  background: linear-gradient(#5209873b, #a72aa73e);
+}
+
+main .score,
+main .Quiz,
+main .Quiz1 {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  text-align: center;
+  color: #fff;
+  width: 80%;
+}
+
+main .msg {
+  float: right;
+  display: none;
+  color: red;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+main .Quiz1 .enemy {
+  background: linear-gradient(#5209873b, #a72aa73e);
+}
+
+main .score h1,
+main .Quiz .animate__animated,
+main .Quiz1 h1 {
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  font-size: 70px;
+  margin-block: 2rem;
+  letter-spacing: 5px;
+}
+
+main .score .animate__animated::first-letter,
+main .Quiz1 .animate__animated::first-letter,
+main .Quiz .animate__animated::first-letter {
+  color: red;
+}
+
+main .Quiz hr {
+  color: red;
+  border: 1px solid;
+  opacity: 1;
+}
+
+main .Quiz .quizq {
+  padding-inline: 5rem;
+  text-align: left;
+  line-height: 100px;
+}
+
+main .Quiz .quizq select {
+  background-color: #a72aa73e;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 10px;
+  padding: 4px;
+  color: #fff;
+  cursor: pointer;
+  appearance: #000;
+}
+main .Quiz .quizq select option {
+  color: #fff;
+  font-size: 20px;
+  background-color: black;
+}
+
+main .Quiz1 .quizq .difficult,
+main .Quiz .quizq .difficult {
+  display: flex;
+  flex-direction: column;
+}
+
+main .Quiz1 .quizq .difficult .pretty,
+main .Quiz .quizq .difficult .pretty {
+  margin: 1rem;
+}
+
+main .Quiz1 .quizq .difficult,
+main .Quiz .quizq .difficult .pretty label {
+  font-size: 20px;
+}
+
+main .Quiz .quizq .Question input {
+  width: 100%;
+  padding: 5px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid red;
+}
+
+main .Quiz .quizq .Question input::placeholder {
+  color: #fff;
+}
+
+main .Quiz .quizq .Question {
+  position: relative;
+}
+
+main .Quiz .Question label {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #fa03fa;
+  font-size: 25px;
+  transform: translatex(-50%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main .Quiz .quizq .Question input:focus {
+  border: 1px solid red;
+  outline: unset;
+}
+
+main button {
+  float: right;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 100px;
+}
+
+.clr {
+  clear: both;
+}
+
+main .Quiz1 {
+  display: none;
+  margin-top: 1rem;
+}
+
+main .Quiz1 .quizq h3 + p {
+  float: right;
+  background-color: #a72aa7c2;
+  margin-right: 2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 30px;
+  font-weight: 500;
+}
+
+main .Quiz1 .quizq .correct {
+  float: left;
+  width: 150px;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin-left: 2rem;
+  display: none;
+}
+
+main .Quiz1 .quizq form {
+  width: 70%;
+  text-align: left;
+  margin: auto;
+}
+
+main .Quiz1 .quizq form p strong {
+  font-size: 40px;
+  color: #ec2fb5;
+  text-align: start;
+}
+
+main .Quiz1 .quizq form {
+  height: 300px;
+}
+
+main .Quiz1 .quizq form .mesg {
+  color: red;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  border: 1px solid;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  display: none;
+}
+
+main .score {
+  transform: translatex(-50%) !important;
+  top: 15%;
+  display: none;
+}
+
+main .score h2 {
+  letter-spacing: 4px;
+  font-size: 50px;
+}
+
+main .score p {
+  font-size: 60px;
+  color: #fa03fa;
+  font-weight: 700;
+}

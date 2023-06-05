@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <main>
+            <div class="Quiz">
+                <h1 class="animate__animated animate__bounce">QUIZ APP</h1>
+                <h2>SETTING YOUR QUIZ</h2>
+                <hr>
+                <div class="quizq">
+                    <h3>Category</h3>
+                    <form action="">
+                        <select name="" id="Category">
+                            <option value="9">General Knowledge</option>
+                            <option value="21">Sports</option>
+                            <option value="23">History</option>
+                            <option value="27">Animals</option>
+                            <option value="25">Art</option>
+                            <option value="28">Vehicles</option>
+                        </select>
+                        <h3>Difficulty</h3>
+                        <span class="msg">Enter number of Question</span>
+                        <div class="difficult">
+                            <div class="pretty p-round p-pulse">
+                                <input value="easy" type="radio" name="difficulty" checked />
+                                <div class="state p-success">
+                                    <label>Easy</label>
+                                </div>
+                            </div>
+                            <div class="pretty p-round p-pulse">
+                                <input value="medium" type="radio" name="difficulty" />
+                                <div class="state p-success">
+                                    <label>Medium</label>
+                                </div>
+                            </div>
+                            <div class="pretty p-round p-pulse">
+                                <input value="hard" type="radio" name="difficulty" />
+                                <div class="state p-success">
+                                    <label>Hard</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Question">
+                            <input class="ps-3" value="1" type="number">
+                            <label class="place">Enter number of Question</label>
+                        </div>
+                    </form>
+                    <button class="btn btn-danger">Start</button>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="Quiz1">
+                <div class="enemy animate__animated animate__bounceInUp">
+                    <h1 class="animate__animated animate__bounce">QUIZ APP</h1>
+                    <div class="quizq">
+                        <h3>Start Qustsion</h3>
+                        <p><span></span> of <span></span> Question</p>
+                        <p class="correct"></p>
+                        <div class="clr"></div>
+                        <hr>
+                        <form action="" class="position-relative">
+                            <p><strong>Q :</strong> <span></span></p>
+                            <span class="mesg"></span>
+                            <div class="clr"></div>
+                            <div class="difficult"></div>
+                        </form>
+                        <button class="btn btn-danger">Start</button>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="score animate__animated animate__fadeInDownBig">
+                <h1 class="animate__animated animate__bounce">QUIZ APP</h1>
+                <div class="quizq">
+                    <h2>Finish</h2>
+                    <hr>
+                    <h3>Score</h3>
+                    <p></p>
+                    <button class="btn btn-danger">Start</button>
+                </div>
+            </div>
+            <div id="particles-js" class="bg-black text-center text-white"></div>
+        </main>
+        <script src="js/particles.min.js"></script>
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
+
+</html>
